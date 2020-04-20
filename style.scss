@@ -1,0 +1,62 @@
+html{
+    background-image: url(./images/time-flies.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-size: 10px;
+    font-family: 'helvetica neue';
+    body{
+        margin: 0;
+        font-size: 2rem;
+        display: flex;
+        min-height: 100vh;
+        align-items: center;
+        .clock{
+            background:linear-gradient(315deg, #a40606 0%, #d98324 74%);
+            height: 40rem;
+            width: 43rem;
+            border-radius: 50%;
+            border: 10px solid lemonchiffon;
+            position: fixed;
+            left: 40%;
+            margin: 0 auto;
+            .hand{
+                height: 6px;
+                background: black;   
+                position: absolute;
+                top: 200px;
+                left: 210px;
+                transform-origin: left;
+                transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+                border-top-right-radius: 100px;
+                border-bottom-right-radius: 100px ;
+            }
+           
+            .hour{
+                width: 90px;
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px ;
+                
+            }
+            .min{
+                width: 140px;
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px ;
+                
+            }
+            .sec{
+                width: 190px;
+                background: darken($color: green, $amount: 7);
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px ;
+                top: 199,5px;
+                left:211px;
+            }
+        }
+    }
+}
+
+
+
+
+
