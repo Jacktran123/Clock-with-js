@@ -14,12 +14,12 @@ function setDate(){
     second.style.transform=`rotate(${degree-90}deg)`;
 
     const minutes= now.getMinutes();
-    const degreeMinutes= ((minutes / 60) * 360) + ((seconds/60)*6);
+    const degreeMinutes= ((minutes / 60) * 360);
     console.log(minutes);
     minute.style.transform=`rotate(${degreeMinutes-90}deg)`;
 
     const hours=now.getHours();
-    const degreeHour= ((hours / 12) * 360) + ((minutes/60)*30) ;
+    const degreeHour= ((hours / 12) * 360)  ;
     hour.style.transform=`rotate(${degreeHour-90}deg)`;
 }
 
